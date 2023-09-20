@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <!-- Cancel Button -->
+        <ImageButton
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:adjustViewBounds="true"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cancel" />
+
+        <!-- Item Name -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Item"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <!-- Buttons with Individual Dotted Boundary -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <!-- Upload Image Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/dotted_border">
+
+            <Button
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/upload_pic"
+                android:gravity="center"
+                android:text="Upload Image"
+                android:textColor="#FF9800"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <!-- Upload Video Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/dotted_border">
+
+            <Button
+                android:id="@+id/video"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/upload_vid"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Upload Video"
+                android:textColor="#FF9800"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Subheading "Name" and Answer Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <!-- Subheading Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Item Name -->
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter item name"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_edge"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- Subheading Hour -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hourly Rate"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- Hourly Rate -->
+        <EditText
+            android:id="@+id/hourlyRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter hourly rate"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_edge"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- Subheading Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <!-- description -->
+        <EditText
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter description"
+            android:textSize="18dp"
+            android:inputType="text"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/round_edge"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- City Dropdown -->
+        <TextView
+            android:id="@+id/CitySubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="City"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- Post Item Button -->
+        <Button
+            android:id="@+id/postItemButton"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#FF9800"
+            android:paddingTop="5dp"
+            android:text="Post Item"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Logo -->
+
+        <!-- Registration Heading -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="390dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/registrationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Registration"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/nameSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:inputType="textPersonName"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/emailSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textSize="17sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+        <!-- Contact Number Subheading -->
+        <TextView
+            android:id="@+id/contactSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact Number"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <!-- Contact Number entering bar -->
+        <EditText
+            android:id="@+id/contactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact number"
+            android:inputType="phone"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black" />
+
+        <!-- Country Dropdown -->
+        <TextView
+            android:id="@+id/countrySubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/countrySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- City Dropdown -->
+        <TextView
+            android:id="@+id/citySubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="City"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Sign Up"
+            android:textSize="16dp"
+            android:backgroundTint="#FF9800"
+            android:textColor="@color/white" />
+
+        <!-- Login -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:textSize="15dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+</ScrollView>

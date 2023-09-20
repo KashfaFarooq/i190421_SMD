@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="16">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:navigationIcon="?android:attr/homeAsUpIndicator"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Search Results" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D3D3D3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:weightSum="4"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:gravity="center|left"
+            android:text="Some item"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:paddingLeft="8dp"/>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1.25"
+            android:background="#0C232121"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="190dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name     $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

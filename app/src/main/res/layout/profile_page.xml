@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="10">
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/textBlock"
+                android:layout_height="wrap_content"
+                android:layout_weight="9.5"
+                android:text="Profile"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingLeft="8dp"
+                android:textColor="@color/black"/>
+
+            <ImageButton
+                android:id="@+id/edit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/edit"
+                android:adjustViewBounds="true"
+                android:padding="1dp"
+                android:scaleType="fitCenter" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+    <!-- Cover Photo -->
+    <ImageView
+        android:id="@+id/coverPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/grey"
+        android:layout_below="@+id/layout1"/>
+
+    <!-- Circular Profile Picture -->
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/landscape"
+        android:layout_alignBottom="@+id/coverPhoto"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@drawable/circle_profile"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePicture"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18dp"
+            android:text="Daud"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.7"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Islamabad"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="18 items posted"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:text="24 items rented"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="Items You've Rented"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="Your Items"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"/>
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="200dp"
+                    android:layout_height="180dp"
+                    android:backgroundTint="@color/white"
+                    android:drawableTop="@drawable/custom_image"
+                    android:gravity="left"
+                    android:text="Item Name        $10/hr\n\nIslamabad       7th Mar"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </HorizontalScrollView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

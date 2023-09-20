@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal">
+
+        <!-- Cancel Button -->
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="46dp"
+            android:adjustViewBounds="true"
+            android:padding="1dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_icon" />
+
+        <!-- Edit Profile -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="Edit Profile"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp">
+        </View>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:backgroundTint="@color/white"
+            android:text="Save Changes"
+            android:textColor="#FF9800"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <!-- Subheading "Name" and Answer Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="30dp">
+
+        <!-- Subheading Name -->
+        <TextView
+            android:id="@+id/nameSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter name"
+            android:inputType="textPersonName"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/emailSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+        <!-- Contact Number Subheading -->
+        <TextView
+            android:id="@+id/contactSubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Contact Number"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+        <!-- Contact Number entering bar -->
+        <EditText
+            android:id="@+id/contactEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter contact number"
+            android:inputType="phone"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black" />
+
+        <!-- Country Dropdown -->
+        <TextView
+            android:id="@+id/countrySubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Country"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/countrySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+        <!-- City Dropdown -->
+        <TextView
+            android:id="@+id/citySubheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="City"
+            android:textSize="18sp"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#1D000000"
+            android:textColorHint="#83000000"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>
